@@ -18,6 +18,9 @@ if os.path.exists('my.txt'):
 
 else:
     print('The file does not exist.')
+    file = open('my.txt','x')
+    file.close()
     file = open('my.txt','w')
     file.write("Hi, I'm Navika.")
+    file.close()
     os.remove('c.py')
